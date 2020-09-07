@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Оля Петрова](https://up.htmlacademy.ru/htmlcss/29/user/378519).
-* Наставник: [Виктория "Mentor" Никитина](https://htmlacademy.ru/profile/id1217273).
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
