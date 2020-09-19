@@ -15,10 +15,10 @@
           <img src="https://via.placeholder.com/154x64" width="154" height="64" alt="Логотип магазина «Глэйси»">
         </a>
         <ul class="site-navigation">
-          <li>
+          <li class="catalog-item">
             <a href="blank.html">Каталог</a>
-            <ul class="site-navigation-dropdown">
-              <li>
+            <ul class="dropdown-navigation">
+              <li class="dropdown-item-new">
                 <a href="blank.html">Новинки</a>
               </li>
               <li>
@@ -42,15 +42,19 @@
             <a href="blank.html">О компании</a>
           </li>
         </ul>
-        <div>
-          <a class="search-link" href="blank.html">Поиск</a>
-          <!-- Форма поиска -->
-        </div>
-        <div>
-          <a class="login-link" href="blank.html">Вход</a>
-          <!-- Форма входа -->
-        </div>
-        <a class="cart-link" href="blank.html">Пусто</a>
+        <ul class="user-navigation">
+          <li>
+            <a class="search-link" href="blank.html">Поиск</a>
+            <!-- Форма поиска -->
+          </li>
+          <li>
+            <a class="login-link" href="blank.html">Вход</a>
+            <!-- Форма входа -->
+          </li>
+          <li>
+            <a class="cart-link" href="blank.html">Пусто</a>
+          </li>
+        </ul>
       </nav>
       <p class="main-header-info">
         с 10 до 20, ежедневно<br>
@@ -70,24 +74,36 @@
               <img src="https://via.placeholder.com/372x584" width="372" height="584" alt="Крем-брюле">
               <img src="https://via.placeholder.com/333x519" width="333" height="519" alt="Пломбир с малиновым джемом">
             </div>
-            <p>Крем-брюле и пломбир с малиновым джемом</p>
-            <a class="button" href="blank.html">Давайте оба!</a>
+            <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
+            <div class="button-wrapper">
+              <a class="button slider-button" href="blank.html">
+                <span>Давайте оба!</span>
+              </a>
+            </div>
           </li>
           <li class="slider-item">
             <div>
               <img src="https://via.placeholder.com/375x582" width="375" height="582" alt="Шоколадный пломбир">
               <img src="https://via.placeholder.com/338x523" width="338" height="523" alt="Лимонный сорбет">
             </div>
-            <p>Шоколадный пломбир и лимонный сорбет</p>
-            <a class="button" href="blank.html">Давайте оба!</a>
+            <p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
+            <div class="button-wrapper">
+              <a class="button slider-button" href="blank.html">
+                <span>Давайте оба!</span>
+              </a>
+            </div>
           </li>
           <li class="slider-item">
             <div>
               <img src="https://via.placeholder.com/367x582" width="367" height="582" alt="Пломбир с помадкой">
               <img src="https://via.placeholder.com/326x523" width="326" height="523" alt="Клубничный щербет">
             </div>
-            <p>Пломбир с помадкой и клубничный щербет</p>
-            <a class="button" href="blank.html">Давайте оба!</a>
+            <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
+            <div class="button-wrapper">
+              <a class="button slider-button" href="blank.html">
+                <span>Давайте оба!</span>
+              </a>
+            </div>
           </li>
         </ul>
         <!-- Кнопки слайдера -->
@@ -96,15 +112,23 @@
       <section class="bonus">
         <h2>Акция</h2>
         <ul class="bonus-list">
-          <li class="bonus-item">
-            <h3>Малинка даром!</h3>
-            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="button" href="blank.html">Хочу варенье!</a>
+          <li class="bonus-item item-raspberry">
+            <h3 class="bonus-title">Малинка даром!</h3>
+            <p class="bonus-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <div class="button-wrapper">
+              <a class="button" href="blank.html">
+                <span>Хочу варенье!</span>
+              </a>
+            </div>
           </li>
-          <li class="bonus-item">
-            <h3>Шоколадки даром!</h3>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a class="button" href="blank.html">Хочу шоколадки!</a>
+          <li class="bonus-item item-chocolade">
+            <h3 class="bonus-title">Шоколадки даром!</h3>
+            <p class="bonus-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <div class="button-wrapper">
+              <a class="button" href="blank.html">
+                <span>Хочу шоколадки!</span>
+              </a>
+            </div>
           </li>
         </ul>
       </section>
@@ -113,36 +137,52 @@
         <h2>Товары</h2>
         <ul class="products-list">
           <li class="products-item">
-            <a href="blank.html">
-              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <a class="products-link" href="blank.html">
+              <h3 class="product-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </a>
-            <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p>310 ₽<span>/кг</span></p>
-            <a class="button" href="blank.html">Быстрый просмотр</a>
+            <img class="product-image" src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p class="product-price">310 ₽<span>/кг</span></p>
+            <div class="button-wrapper">
+              <a class="button" href="blank.html">
+                <span>Быстрый просмотр</span>
+              </a>
+            </div>
           </li>
           <li class="products-item">
-            <a href="blank.html">
-              <h3>Сливочно-кофейное с кусочками шоколада</h3>
+            <a class="products-link" href="blank.html">
+              <h3 class="product-title">Сливочно-кофейное с кусочками шоколада</h3>
             </a>
-            <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <p>380 ₽<span>/кг</span></p>
-            <a class="button" href="blank.html">Быстрый просмотр</a>
+            <img class="product-image" src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <p class="product-price">380 ₽<span>/кг</span></p>
+            <div class="button-wrapper">
+              <a class="button" href="blank.html">
+                <span>Быстрый просмотр</span>
+              </a>
+            </div>
           </li>
           <li class="products-item">
-            <a href="blank.html">
-              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            <a class="products-link" href="blank.html">
+              <h3 class="product-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </a>
-            <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <p>355 ₽<span>/кг</span></p>
-            <a class="button" href="blank.html">Быстрый просмотр</a>
+            <img class="product-image" src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p class="product-price">355 ₽<span>/кг</span></p>
+            <div class="button-wrapper">
+              <a class="button" href="blank.html">
+                <span>Быстрый просмотр</span>
+              </a>
+            </div>
           </li>
           <li class="products-item">
-            <a href="blank.html">
-              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+            <a class="products-link" href="blank.html">
+              <h3 class="product-title">Сливочное крем-брюле с карамельной подливкой</h3>
             </a>
-            <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <p>415 ₽<span>/кг</span></p>
-            <a class="button" href="blank.html">Быстрый просмотр</a>
+            <img class="product-image" src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p class="product-price">415 ₽<span>/кг</span></p>
+            <div class="button-wrapper">
+              <a class="button" href="blank.html">
+                <span>Быстрый просмотр</span>
+              </a>
+            </div>
           </li>
         </ul>
       </section>
@@ -176,15 +216,19 @@
           <p class="contacts-address">
             Адрес главного офиса<br>
             и офлайн-магазина:<br>
-            ул. Большая Конюшенная,<br>
-            19/8, Санкт-Петербург
+            <span>ул. Большая Конюшенная,<br>
+            19/8, Санкт-Петербург</span>
           </p>
           <p class="contacts-info">
             Для заказов по телефону:<br>
             <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a><br>
             (с 10 до 20 ежедневно)
           </p>
-          <a class="button" href="blank.html">Форма обратной связи</a>
+          <div class="button-wrapper">
+            <a class="button" href="blank.html">
+              <span>Форма обратной связи</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -211,7 +255,7 @@
       <section class="footer-documentation">
         <h2>Документация</h2>
         <ul class="footer-documentation-list">
-          <li class="footer-documentation-item">
+          <li class="footer-documentation-item item-suppliers">
             <a href="blank.html">Для поставщиков</a>
           </li>
           <li class="footer-documentation-item">

@@ -1,0 +1,383 @@
+/** {outline: 1px solid lightpink;}*/
+
+/* Variables */
+
+:root {
+  --green-theme: #849D8F;
+  --blue-theme: #8996A6;
+  --brown-theme: #9D8B84;
+  --button-light: #F26843;
+  --button-dark: #E74A35;
+  --white: #FFFFFF;
+  --gray-text: #323232;
+  --gray-forms: #F8F7F4;
+  --gray-placeholder: #999999;
+  --gray-active: #EDEDED;
+  --gray-active-shadow: #696969;
+  --gray-subscription-text: #5A5A5A;
+  --dropdown-hover: #FBDED7;
+  --dropdown-active: #F6B5A5;
+  --dropdown-current: #D07058;
+  --link-light: #FFBC9E;
+  /*цвет ссылки без фона наведение и нажатие*/
+  --link-dark: #E84D37;
+  /*цвет ссылки на белом фоне наведение и нажатие*/
+  --raspberry-bg: #9F030B;
+  --chocolate-bg: #6A412F;
+  --waffle-bg: #F1E6D0;
+}
+
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--green-theme);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button-wrapper {
+/*  width: 278px;
+  height: 63px;*/
+  background: linear-gradient(180deg, var(--button-light) 0%, var(--button-dark) 100%);
+  box-shadow: 0px 2px 2px rgba(85, 8, 0, 0.54);
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  text-align: center;
+}
+
+.button {
+/*  display: block;
+  width: 100%;
+  height: 100%;*/
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button:active {
+  background-color: transparent;
+  box-shadow: inset 0px 2px 2px #942718;
+}
+
+/* Header-------------------------------------------------------------------------------------- */
+/* Main navigation */
+
+.main-header {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.main-header ul {
+  list-style: none;
+}
+
+.main-header a {
+  color: var(--white);
+}
+
+.main-navigation {
+  text-align: center;
+}
+
+/*Site navigation*/
+
+.site-navigation a {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--gray-text);
+  background-color: var(--white);
+  text-decoration: none;
+}
+
+.site-navigation a:active {
+  color: var(--gray-text);
+  background-color: var(--gray-active);
+  box-shadow: inset 0px 2px 1px var(--gray-active-shadow);
+}
+
+/*Dropdown*/
+
+.dropdown-navigation {
+  /*display: none;*/
+  text-align: left;
+  background-color: var(--white);
+}
+
+/*.catalog-item:hover .dropdown-navigation {
+  display: block;
+}*/
+
+.dropdown-navigation a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--gray-text);
+  text-decoration: none;
+}
+
+.dropdown-navigation a:hover,
+.dropdown-navigation a:focus {
+  background-color: var(--dropdown-hover);
+}
+
+.dropdown-navigation a:active {
+  background-color: var(--dropdown-active);
+  box-shadow: none;
+}
+
+.dropdown-item-new a {
+  line-height: 18px;
+  font-weight: 700;
+}
+
+/*User navigation*/
+
+.user-navigation a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-navigation a:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: var(--gray-text);
+}
+
+/*Header info*/
+
+.main-header-info {
+  text-align: right;
+}
+
+.main-header-info a {
+  font-size: 22px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+/*Main-----------------------------------------------------------------------------*/
+/*Slider*/
+
+.slider-item {
+  list-style: none;
+  text-align: center;
+}
+
+.slider-text {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.slider-button {
+  font-size: 32px;
+  line-height: 44px;
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+/*Bonus*/
+
+.bonus-list {
+  list-style: none;
+  font-weight: 700;
+}
+
+.bonus-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.bonus-text {
+  font-size: 18px;
+}
+
+.item-raspberry {
+  background-color: var(--raspberry-bg);
+}
+
+.item-chocolade {
+  background-color: var(--chocolate-bg);
+}
+
+/*Products*/
+
+.products-list {
+  list-style: none;
+ }
+
+.products-item {
+  text-align: center;
+}
+
+.products-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.products-link {
+  color: var(--white);
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.products-link:hover {
+  color: var(--link-light);
+  text-decoration-color: rgba(255, 188, 158, 0.3);
+}
+
+.product-price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  text-align: left;
+}
+
+.product-price span {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.product-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+/*Shop info*/
+
+.shop-info {
+  color: var(--gray-text);
+  background-color: var(--waffle-bg);
+}
+
+.shop-info-text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.shop-info-list {
+  list-style: none;
+}
+
+/*Blog*/
+
+.blog {
+  background-color: var(--white);
+}
+
+.blog-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--gray-text);
+}
+
+.blog-link {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--gray-text);
+}
+
+.blog-link:hover {
+  color: var(--link-dark);
+  text-decoration-color: rgba(232, 77, 55, 0.3);
+}
+
+/*Subscription*/
+
+.subscription {
+  color: var(--gray-subscription-text)
+  background-color: var(--gray-forms);
+}
+
+/*Contacts*/
+
+.contacts {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-text);
+  background-color: var(--white);
+}
+
+.contacts-address span,
+.contacts-phone {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contacts-phone {
+  text-decoration: none;
+  color: var(--gray-text);
+}
+
+/*Footer*/
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer a {
+  color: var(--white);
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-footer a:hover {
+  color: var(--link-light);
+  text-decoration-color: rgba(255, 188, 158, 0.3);
+}
+
+.footer-documentation-list {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.item-suppliers {
+  font-weight: 700;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/*Modal*/
+
+.modal {
+  color: var(--gray-text);
+  background-color: var(--gray-forms);
+}
+
+.modal-text {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+
+
