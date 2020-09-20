@@ -3,104 +3,111 @@
   <head>
     <meta charset="utf-8">
     <title>Веб-страница - Магазин «Глэйси»</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body inner-page">
 
-    <header>
-      <nav>
-        <a href="index.html">
-          <img src="https://via.placeholder.com/154x64" width="154" height="64" alt="Логотип магазина «Глэйси»">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина «Глэйси»">
         </a>
-        <ul>
-          <li>
-            <a>Каталог</a>
-            <ul>
-              <li>
-                <a>Новинки</a>
+        <ul class="site-navigation">
+          <li class="catalog-item">
+            <a href="blank.html">Каталог</a>
+            <ul class="dropdown-navigation">
+              <li class="dropdown-item-new">
+                <a href="blank.html">Новинки</a>
               </li>
               <li>
                 <a href="catalog.html">Сливочное</a>
               </li>
               <li>
-                <a>Щербеты</a>
+                <a href="blank.html">Щербеты</a>
               </li>
               <li>
-                <a>Фруктовый лед</a>
+                <a href="blank.html">Фруктовый лед</a>
               </li>
               <li>
-                <a>Мелорин</a>
+                <a href="blank.html">Мелорин</a>
               </li>
             </ul>
           </li>
           <li>
-            <a>Доставка и оплата</a>
+            <a href="blank.html">Доставка и оплата</a>
           </li>
           <li>
-            <a>О компании</a>
+            <a href="blank.html">О компании</a>
           </li>
         </ul>
-        <div>
-          <a>Поиск</a>
-          <!-- Форма поиска -->
-        </div>
-        <div>
-          <a>Вход</a>
-          <!-- Форма входа -->
-        </div>
-        <a>Пусто</a>
+        <ul class="user-navigation">
+          <li>
+            <a class="search-link" href="blank.html">Поиск</a>
+            <!-- Форма поиска -->
+          </li>
+          <li>
+            <a class="login-link" href="blank.html">Вход</a>
+            <!-- Форма входа -->
+          </li>
+          <li>
+            <a class="cart-link" href="blank.html">Пусто</a>
+          </li>
+        </ul>
       </nav>
-      <p>
+      <p class="main-header-info">
         с 10 до 20, ежедневно<br>
-        <a href="tel:+78124502525">8 812 450-25-25</a>
+        <a class="main-header-phone" href="tel:+78124502525">8 812 450-25-25</a>
       </p>
     </header>
 
     <main>
 
-      <h1>Веб-страница магазина «Глэйси»</h1>
+      <h1 class="page-title">Веб-страница магазина «Глэйси»</h1>
 
       <p>Контент</p>
 
     </main>
 
-    <footer>
-      <section>
+    <footer class="page-footer main-footer">
+      <section class="footer-social">
         <h2>Мы в социальных сетях</h2>
         <ul>
           <li>
-            <a href="#">Фейсбук</a>
+            <a class="social-button" href="#">Фейсбук</a>
           </li>
           <li>
-            <a href="#">Вконтакте</a>
+            <a class="social-button" href="#">Вконтакте</a>
           </li>
           <li>
-            <a href="#">Инстаграм</a>
+            <a class="social-button" href="#">Инстаграм</a>
           </li>
           <li>
-            <a href="#">Твиттер</a>
+            <a class="social-button" href="#">Твиттер</a>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="footer-documentation">
         <h2>Документация</h2>
-        <ul>
-          <li>
-            <a>Для поставщиков</a>
+        <ul class="footer-documentation-list">
+          <li class="footer-documentation-item item-suppliers">
+            <a href="blank.html">Для поставщиков</a>
           </li>
-          <li>
-            <a>Наши документы</a>
+          <li class="footer-documentation-item">
+            <a href="blank.html">Наши документы</a>
           </li>
-          <li>
-            <a>О производстве</a>
+          <li class="footer-documentation-item">
+            <a href="blank.html">О производстве</a>
           </li>
-          <li>
-            <a>Экологические стандарты</a>
+          <li class="footer-documentation-item">
+            <a href="blank.html">Экологические стандарты</a>
           </li>
         </ul>
       </section>
-      <p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
+      <p class="footer-copyright">
+        <a class="copyright-logo-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
       </p>
     </footer>
 

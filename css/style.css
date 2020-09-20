@@ -337,6 +337,52 @@ img {
   color: var(--gray-text);
 }
 
+.breadcrumbs {
+  list-style: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs a {
+  color: var(--white);
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs a:hover {
+  color: var(--link-light);
+  text-decoration-color: rgba(255, 188, 158, 0.3);
+}
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.pagination-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.pagination-item a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item a:active,
+.pagination-item-current a,
+.pagination-item-current a:hover {
+  color: var(--gray-text);
+  background-color: var(--white);
+}
+
 /*Footer*/
 
 .main-footer ul {
