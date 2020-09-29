@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Веб-страница - Магазин «Глэйси»</title>
@@ -15,43 +15,51 @@
           <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина «Глэйси»">
         </a>
         <ul class="site-navigation">
-          <li class="catalog-item">
-            <a href="blank.html">Каталог</a>
+          <li class="navigation-item catalog-item">
+            <a class="navigation-link" href="catalog.html">Каталог</a>
             <ul class="dropdown-navigation">
-              <li class="dropdown-item-new">
-                <a href="blank.html">Новинки</a>
+              <li>
+                <a class="dropdown-link dropdown-link-new" href="blank.html">Новинки</a>
               </li>
               <li>
-                <a href="catalog.html">Сливочное</a>
+                <a class="dropdown-link" href="catalog.html">Сливочное</a>
               </li>
               <li>
-                <a href="blank.html">Щербеты</a>
+                <a class="dropdown-link" href="blank.html">Щербеты</a>
               </li>
               <li>
-                <a href="blank.html">Фруктовый лед</a>
+                <a class="dropdown-link" href="blank.html">Фруктовый лед</a>
               </li>
               <li>
-                <a href="blank.html">Мелорин</a>
+                <a class="dropdown-link" href="blank.html">Мелорин</a>
               </li>
             </ul>
           </li>
-          <li>
-            <a href="blank.html">Доставка и оплата</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="blank.html">Доставка и оплата</a>
           </li>
-          <li>
-            <a href="blank.html">О компании</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="blank.html">О компании</a>
           </li>
         </ul>
         <ul class="user-navigation">
-          <li>
-            <a class="search-link" href="blank.html">Поиск</a>
-            <!-- Форма поиска -->
+          <li class="user-navigation-item">
+            <a class="search-link" href="blank.html"><span class="visually-hidden">Поиск</span></a>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <input type="search" name="search" placeholder="Крем-брюле">
+            </form>
           </li>
-          <li>
+          <li class="user-navigation-item">
             <a class="login-link" href="blank.html">Вход</a>
-            <!-- Форма входа -->
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" name="login-email" placeholder="email@example.com">
+              <input type="password" name="login-password" placeholder="......">
+              <input class="button" type="submit" value="Войти">
+              <a href="blank.html">Забыли пароль?</a>
+              <a href="blank.html">Новая регистрация</a>
+            </form>
           </li>
-          <li>
+          <li class="user-navigation-item">
             <a class="cart-link" href="blank.html">Пусто</a>
           </li>
         </ul>
@@ -62,18 +70,15 @@
       </p>
     </header>
 
-    <main>
-
-      <h1 class="page-title">Веб-страница магазина «Глэйси»</h1>
-
+    <main class="page-main inner-container">
+      <h1 class="page-heading">Веб-страница магазина «Глэйси»</h1>
       <p>Контент</p>
-
     </main>
 
     <footer class="page-footer main-footer">
       <section class="footer-social">
-        <h2>Мы в социальных сетях</h2>
-        <ul>
+        <h2 class="footer-social-heading visually-hidden">Мы в социальных сетях</h2>
+        <ul class="footer-social-list">
           <li>
             <a class="social-button" href="#">Фейсбук</a>
           </li>
@@ -89,24 +94,24 @@
         </ul>
       </section>
       <section class="footer-documentation">
-        <h2>Документация</h2>
+        <h2 class="footer-documentation-heading visually-hidden">Документация</h2>
         <ul class="footer-documentation-list">
           <li class="footer-documentation-item item-suppliers">
-            <a href="blank.html">Для поставщиков</a>
+            <a class="footer-documentation-link" href="blank.html">Для поставщиков</a>
           </li>
           <li class="footer-documentation-item">
-            <a href="blank.html">Наши документы</a>
+            <a class="footer-documentation-link" href="blank.html">Наши документы</a>
           </li>
           <li class="footer-documentation-item">
-            <a href="blank.html">О производстве</a>
+            <a class="footer-documentation-link" href="blank.html">О производстве</a>
           </li>
           <li class="footer-documentation-item">
-            <a href="blank.html">Экологические стандарты</a>
+            <a class="footer-documentation-link" href="blank.html">Экологические стандарты</a>
           </li>
         </ul>
       </section>
       <p class="footer-copyright">
-        <a class="copyright-logo-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a class="copyright-logo-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a><br>
         Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019
       </p>
     </footer>
