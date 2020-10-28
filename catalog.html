@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Сливочное мороженое - Магазин «Глэйси»</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body inner-page">
     <header class="main-header">
@@ -60,8 +60,8 @@
             </a>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="login-form-wrapper">
-                <input class="login-input-email" type="email" name="login-email" placeholder="email@example.com" aria-label="Поле ввода адреса электронной почты">
-                <input class="login-input-password" type="password" name="login-password" placeholder="......" aria-label="Поле ввода пароля">
+                <input class="login-input-email" type="email" name="login-email" placeholder="email@example.com" aria-label="Поле ввода адреса электронной почты" required>
+                <input class="login-input-password" type="password" name="login-password" placeholder="......" aria-label="Поле ввода пароля" required>
                 <div class="login-submit-wrapper">
                   <div class="button-wrapper">
                     <input class="button login-button" type="submit" value="Войти">
@@ -80,34 +80,38 @@
               2 товара
             </a>
             <div class="cart-full-wrapper">
-              <ul class="cart-full-list">
-                <li class="cart-full-item">
-                  <a class="cart-remove-item" href="blank.html" aria-label="Убрать из корзины"></a>
-                  <img class="cart-full-image" src="img/cart-img-1.jpg" width="33" height="33" alt="">
-                  <h3 class="cart-full-title">Пломбир с апельсиновым джемом</h3>
-                  <p class="cart-full-price">1,5 кг х <span>200 руб.</span></p>
-                  <p class="cart-full-total">300 руб.</p>
-                </li>
-                <li class="cart-full-item">
-                  <a class="cart-remove-item" href="blank.html" aria-label="Убрать из корзины"></a>
-                  <img class="cart-full-image" src="img/cart-img-2.jpg" width="33" height="33" alt="">
-                  <h3 class="cart-full-title">Клубничный пломбир с присыпкой из белого шоколада</h3>
-                  <p class="cart-full-price">1,5 кг х <span>300 руб.</span></p>
-                  <p class="cart-full-total">450 руб.</p>
-                </li>
-              </ul>
-              <div class="cart-full-total-wrapper">
-                <p class="cart-full-price-total">Итого: 750 руб.</p>
-                <div class="button-wrapper">
-                  <a class="button cart-full-button" href="blank.html">Оформить заказ</a>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <ul class="cart-full-list">
+                  <li class="cart-full-item">
+                    <input type="hidden" value="Пломбир с апельсиновым джемом" name="cart-item[]">
+                    <a class="cart-remove-item" href="blank.html" aria-label="Убрать из корзины"></a>
+                    <img class="cart-full-image" src="img/cart-img-1.jpg" width="33" height="33" alt="">
+                    <h3 class="cart-full-title">Пломбир с апельсиновым джемом</h3>
+                    <p class="cart-full-price">1,5 кг х <span>200 руб.</span></p>
+                    <p class="cart-full-total">300 руб.</p>
+                  </li>
+                  <li class="cart-full-item">
+                    <input type="hidden" value="Клубничный пломбир с присыпкой из белого шоколада" name="cart-item[]">
+                    <a class="cart-remove-item" href="blank.html" aria-label="Убрать из корзины"></a>
+                    <img class="cart-full-image" src="img/cart-img-2.jpg" width="33" height="33" alt="">
+                    <h3 class="cart-full-title">Клубничный пломбир с присыпкой из белого шоколада</h3>
+                    <p class="cart-full-price">1,5 кг х <span>300 руб.</span></p>
+                    <p class="cart-full-total">450 руб.</p>
+                  </li>
+                </ul>
+                <div class="cart-full-total-wrapper">
+                  <p class="cart-full-price-total">Итого: 750 руб.</p>
+                  <div class="button-wrapper">
+                    <button class="button cart-full-button" type="submit">Оформить заказ</button>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </li>
         </ul>
       </nav>
       <p class="main-header-info">
-        с 10 до 20, ежедневно<br>
+        с 10 до 20, ежедневно
         <a class="main-header-phone" href="tel:+78124502525">8 812 450-25-25</a>
       </p>
     </header>

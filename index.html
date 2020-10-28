@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Магазин «Глэйси»</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body green-theme">
     <header class="main-header">
@@ -60,8 +60,8 @@
             </a>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="login-form-wrapper">
-                <input class="login-input-email" type="email" name="login-email" placeholder="email@example.com" aria-label="Поле ввода адреса электронной почты">
-                <input class="login-input-password" type="password" name="login-password" placeholder="......" aria-label="Поле ввода пароля">
+                <input class="login-input-email" type="email" name="login-email" placeholder="email@example.com" aria-label="Поле ввода адреса электронной почты" required>
+                <input class="login-input-password" type="password" name="login-password" placeholder="......" aria-label="Поле ввода пароля" required>
                 <div class="login-submit-wrapper">
                   <div class="button-wrapper">
                     <input class="button login-button" type="submit" value="Войти">
@@ -83,7 +83,7 @@
         </ul>
       </nav>
       <p class="main-header-info">
-        с 10 до 20, ежедневно<br>
+        с 10 до 20, ежедневно
         <a class="main-header-phone" href="tel:+78124502525">8 812 450-25-25</a>
       </p>
     </header>
@@ -216,7 +216,7 @@
               <h2 class="subscription-heading visually-hidden">Подписка на рассылку</h2>
               <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-                <input class="subscription-email" type="email" name="email" placeholder="email@example.com" aria-label="Поле ввода адреса электронной почты для подписки на рассылку">
+                <input class="subscription-email" type="email" name="email" placeholder="email@example.com" aria-label="Поле ввода адреса электронной почты для подписки на рассылку" required>
                 <div class="button-wrapper">
                   <input class="button submit-button" type="submit" value="Отправить">
                 </div>
@@ -231,12 +231,10 @@
           <div class="contacts-container">
             <div class="contacts-content">
               <h2 class="contacts-heading visually-hidden">Контактная информация</h2>
-              <p class="contacts-address">
+              <p class="contacts-office">
                 Адрес главного офиса<br>
-                и офлайн-магазина:<br>
-                <span>ул. Большая Конюшенная,<br>
-                19/8, Санкт-Петербург</span>
-              </p>
+                и офлайн-магазина:</p>
+              <address class="contacts-address">ул. Большая Конюшенная, 19/8, Санкт-Петербург</address>
               <p class="contacts-info">
                 Для заказов по телефону:<br>
                 <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a><br>
@@ -309,6 +307,6 @@
         <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </section>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
